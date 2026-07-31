@@ -1,11 +1,4 @@
-title: Pages Security Test
+title: Git Object Read Test
 include:
   - ".git"
   - ".env"
-  - "_plugins"
-  - "_data"
-keep_files:
-  - ".git"
-source: .
-destination: ./_site
-plugins: []
