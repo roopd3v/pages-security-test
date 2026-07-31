@@ -1,3 +1,14 @@
 ---
 ---
-<html><body><h1>test</h1></body></html>
+<html><body>
+<h1>Layer Differential Test</h1>
+<h2>Data directory contents:</h2>
+<pre>{{ site.data.secrets | jsonify }}</pre>
+<h2>Site config source:</h2>
+<pre>{{ site.source }}</pre>
+<h2>Static files:</h2>
+<pre>{% for f in site.static_files %}{{ f.path }}
+{% endfor %}</pre>
+<h2>GitHub metadata:</h2>
+<pre>{{ site.github.build_revision }}</pre>
+</body></html>

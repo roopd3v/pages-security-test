@@ -1,2 +1,11 @@
 title: Pages Security Test
-markdown: kramdown
+include:
+  - ".git"
+  - ".env"
+  - "_plugins"
+  - "_data"
+keep_files:
+  - ".git"
+source: .
+destination: ./_site
+plugins: []
